@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -18,17 +20,21 @@
             <img src="./images/logo.svg" alt="Logo BarberShop" />
         </a>
 
-        <nav class="main-navigation">
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Services and Prices</a></li>
-                <li><a href="#">Barbers</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Services and Prices</a></li>
+                    <li><a href="#">Barbers</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
 
-        <a href="tel:+380441111111" class="phone-number">+38 044 111 11 11</a>
-        <button type="button" class="button">Book a Service</button>
+            <div class="contact-container">
+                <a href="tel:+380441111111" class="phone-number">+38 044 111 11 11</a>
+                <button type="button" class="button">Book a Service</button>
+            </div>
+        </div>
 
         <section>
             <a href="https://www.youtube.com" target="_blank">YouTube</a>
@@ -77,48 +83,55 @@
         </section>
 
         <!-- Services and Prices Section -->
-        <section>
-            <img src="./images/horizontal-dash.svg" alt="Horizontal Dash" />
-            <h3>Spend time in the company of the best craftsmen</h3>
-            <h2>Services and Prices</h2>
+        <section id="services" class="prices-section">
+            <div class="section-description">
+                <div class="heading-with-dash">
+                    <img src="./images/horizontal-dash.svg" alt="Horizontal Dash" />
+                    <h3>Spend time in the company of the best craftsmen</h3>
+                </div>
+                <h2 class="section-heading">Services and Prices</h2>
+            </div>
 
-            <ul>
-                <li>
-                    <span>Men's Haircut</span>
-                    <span>from 300 UAH</span>
-                </li>
-                <li>
-                    <span>Beard Trim</span>
-                    <span>from 200 UAH</span>
-                </li>
-                <li>
-                    <span>Mustache Trim</span>
-                    <span>from 200 UAH</span>
-                </li>
-                <li>
-                    <span>Straight Razor Shave</span>
-                    <span>from 200 UAH</span>
-                </li>
-            </ul>
+            <div class="prices">
+                <ul class="prices-list">
+                    <li>
+                        <span>Men's Haircut</span>
+                        <span class="prices-dash"></span>
+                        <span>from 300 UAH</span>
+                    </li>
+                    <li>
+                        <span>Beard Trim</span>
+                        <span>from 200 UAH</span>
+                    </li>
+                    <li>
+                        <span>Mustache Trim</span>
+                        <span>from 200 UAH</span>
+                    </li>
+                    <li>
+                        <span>Straight Razor Shave</span>
+                        <span>from 200 UAH</span>
+                    </li>
+                </ul>
 
-            <ul>
-                <li>
-                    <span>Trainee Haircut</span>
-                    <span>from 50 UAH</span>
-                </li>
-                <li>
-                    <span>Buzz Cut</span>
-                    <span>from 200 UAH</span>
-                </li>
-                <li>
-                    <span>Kids Haircut (&lt;12 y.o.)</span>
-                    <span>from 300 UAH</span>
-                </li>
-                <li>
-                    <span>Gray Coverage</span>
-                    <span>from 200 UAH</span>
-                </li>
-            </ul>
+                <ul class="prices-list">
+                    <li>
+                        <span>Trainee Haircut</span>
+                        <span>from 50 UAH</span>
+                    </li>
+                    <li>
+                        <span>Buzz Cut</span>
+                        <span>from 200 UAH</span>
+                    </li>
+                    <li>
+                        <span>Kids Haircut (&lt;12 y.o.)</span>
+                        <span>from 300 UAH</span>
+                    </li>
+                    <li>
+                        <span>Gray Coverage</span>
+                        <span>from 200 UAH</span>
+                    </li>
+                </ul>
+            </div>
 
             <button class="button">Book a Service</button>
         </section>
@@ -170,19 +183,8 @@
             <span>John Smith</span>
             <br />
             <span>Extreme Barber</span>
-
-            <img src="images/barber_michele_doe.png" alt="John Smith" />
-            <br />
-            <span>Michele Doe</span>
-            <br />
-            <span>Extreme Barber</span>
-
-            <img src="images/barber_alan_black.png" alt="John Smith" />
-            <br />
-            <span>Alan Black</span>
-            <br />
-            <span>Extreme Barber</span>
         </section>
     </main>
 </body>
+
 </html>
